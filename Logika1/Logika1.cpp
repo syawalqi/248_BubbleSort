@@ -20,7 +20,7 @@ void input() {
     cout << "================" << endl;
 
     for (int i = 0; i < n; i++) {
-        cout << "data ke-" << (i + i) << "; ";
+        cout << "data ke-" << (i + 1) << "; ";
         cin >> arr[i];
     }
 
@@ -40,7 +40,7 @@ void bubblesortarray() { //procedur untuk mengurutkan array
         }
         pass = pass + 1; // step 4
 
-    } while (pass < n - 1); //step5
+    } while (pass <= n); //step5
     
 }
 
@@ -61,6 +61,14 @@ void display() {
 
 int main()
 {
+    input(); //memanggil prosedur untuk menginput data 
+    bubblesortarray(); //memanggil prosedur bubblesort
+    display(); // memanggil prosedur untuk menampilkan data yang telah diproses
+    system("pause");
+
+
+    return 0;
+
     cout << "Hello World!\n";
 }
 
